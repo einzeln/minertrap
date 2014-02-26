@@ -2,11 +2,11 @@
 
 THIS_PID=$$   
 echo "THIS_PID=$THIS_PID"  
-trap "./killbash" INT TERM 
+trap "./killbash.sh" INT TERM 
 
 while [ 1 ]
 do 
-	./bashminer &
+	./bashminer.sh &
 
 	sleep 3600
 
